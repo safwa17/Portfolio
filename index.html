@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Safwa DJELABI</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bb1bc84961.js" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="assets/keyboard-key-s.png" type="x-icon">
+</head>
+
+<body id="top">
+    <header>
+        <nav>
+            <button id="burger-menu"><i id="bars" class="fa-solid fa-bars"></i></button>
+            <ul id="menu-principal">
+                <a href="#qs" class="ancre">
+                    <li>Qui suis-je ?</li>
+                </a>
+                <span class="vertical-line"></span>
+                <a href="#cmp" class="ancre">
+                    <li>Mes compétences</li>
+                </a>
+                <span class="vertical-line"></span>
+                <a href="#rea" class="ancre">
+                    <li>Mes Réalisations</li>
+                </a>
+                <span class="vertical-line"></span>
+                <a href="#ct" class="ancre">
+                    <li>Contact</li>
+                </a>
+            </ul>
+            <div>
+                <input type="checkbox" class="checkbox" id="checkbox">
+                <label for="checkbox" class="checkbox-label">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                    <span class="ball"></span>
+                </label>
+            </div>
+        </nav>
+        <a href="#top">
+            <h1>Safwa Djelabi</h1>
+        </a>
+    </header>
+
+    <main>
+        <section>
+            <div id="qs">
+                <img src="assets/image1.png" alt="Safwa">
+                <div>
+                    <p>Bonjour, je suis Safwa Djelabi. Je suis étudiante en 1ère année de BUT MMI (Métiers du Multimédia
+                        et de l'Internet) à l'IUT Paul Sabatier antenne de Castres. L'année prochaine j'aimerais me
+                        diriger vers le parcours Développement web dans l'optique d'enrichir mes compétences et
+                        devenir développeuse full-stack d'ici quelques années.
+                        J'aimerais aussi trouver une alternance pour l'année 2024.</p>
+                </div>
+
+            </div>
+            <div id="cv">
+                <a href="https://webmmi.iut-tlse3.fr/~djs4708a/CV%20DJELABI%20Safwa/#top" target="_blank"><button
+                        class='button-6'>Curriculum Vitae</button></a>
+            </div>
+        </section>
+
+        <section>
+            <div id="cmp">
+                <h3>Mes compétences</h3>
+                <div class="marquee">
+                    <ul class="marquee-content">
+                        <li><i class="fab fa-github"></i></li>
+                        <li><i class="fa-brands fa-html5"></i></li>
+                        <li><i class="fab fa-free-code-camp"></i></li>
+                        <li><i class="fab fa-wordpress"></i></li>
+                        <li><i class="fa-brands fa-css3-alt"></i></li>
+                        <li><i class="fa-brands fa-js"></i></li>
+                        <li><i class="fa-brands fa-figma"></i></li>
+                        <li><i class="fa-brands fa-elementor"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="rea">
+            <h3 id="real">Mes Réalisations</h3>
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('Tout')">Tout</button>
+                <button class="btn" onclick="filterSelection('dev')"> Développement Web</button>
+                <button class="btn" onclick="filterSelection('crea')"> Création Graphique</button>
+                <button class="btn" onclick="filterSelection('ui')"> UI/UX</button>
+            </div>
+            <div class="row">
+                <div class="column dev">
+                    <div class="content">
+                        <img src="assets/mockupjeanmonnet.png" alt="mockup site jean monnet" style="width:100%">
+                        <a href="https://webmmi.iut-tlse3.fr/~djs4708a/Jean%20N'est%20Pas%20Monnet/" target="_blank">
+                            <h4>Jean N'est Pas Monnet</h4>
+                        </a>
+                        <p>HTML 5 CSS 3</p>
+                    </div>
+                </div>
+                <div class="column dev">
+                    <div class="content">
+                        <img src="assets/FairyMusix-mockup.png" alt="Site Fairy Musix" style="width:100%">
+                        <a href="https://webmmi.iut-tlse3.fr/~dbl3465a/Fairymusix/" target="_blank">
+                            <h4>Fairy Musix</h4>
+                        </a>
+                        <p>HTML 5 CSS 3 JS</p>
+                    </div>
+                </div>
+                <div class="column dev">
+                    <div class="content">
+                        <img src="assets/mockupbecomeyou.png" alt="mockup site BecomeYou" style="width:100%">
+                        <a href="https://webmmi.iut-tlse3.fr/~djs4708a/becomeyou/" target="_blank">
+                            <h4>BecomeYou</h4>
+                        </a>
+                        <p>Wordpress - Elementor - HTML5 CSS 3 JS</p>
+                    </div>
+                </div>
+                <div class="column crea">
+                    <div class="content">
+                        <img src="assets/mockupmugTC.png" alt="logo technique de commercialisation" style="width:100%">
+                        <a href="">
+                            <h4>Logo Technique de Commercialisation</h4>
+                        </a>
+                        <p>Adobe Illustrator</p>
+                    </div>
+                </div>
+                <div class="column crea">
+                    <div class="content">
+                        <img src="assets/mockupbière.png" alt="etiquettes bières" style="width:100%">
+                        <a
+                            href="https://www.canva.com/design/DAFeqhAJQ-s/UtrCqzZvwNAx_U0VplYuvQ/edit?utm_content=DAFeqhAJQ-s&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">
+                            <h4>Etiquettes Bières</h4>
+                        </a>
+                        <p>Adobe Illustrator - Adobe Photoshop</p>
+                    </div>
+                </div>
+                <div class="column crea">
+                    <div class="content">
+                        <img src="assets/brochures.png" alt="brochures insert solutions" style="width:100%">
+                        <a href="">
+                            <h4>Brochures Insert Solutions</h4>
+                        </a>
+                        <p>Canva</p>
+                    </div>
+                </div>
+                <div class="column ui">
+                    <div class="content">
+                        <img src="assets/maquettebecomeyou.png" alt="maquette becomeyou" style="width:100%">
+                        <a
+                            href="https://www.figma.com/file/OwkQJQRz0m5igJOXPzeahI/becomeyou?type=design&t=XoR8fb2RIO23b4qQ-1" target="_blank">
+                            <h4>BecomeYou</h4>
+                        </a>
+                        <p>Figma</p>
+                    </div>
+                </div>
+                <div class="column ui">
+                    <div class="content">
+                        <img src="assets/maquetteportfolio.png" alt="maquette Portfolio" style="width:100%">
+                        <a href="">
+                            <h4>Portfolio 1ère Version</h4>
+                        </a>
+                        <p>Figma</p>
+                    </div>
+                </div>
+                <div class="column ui">
+                    <div class="content">
+                        <img src="assets/maquettejeanmonnet.png" alt="maquette jean n'est pas monnet"
+                            style="width:100%">
+                        <a href="">
+                            <h4>Jean N'est Pas Monnet</h4>
+                        </a>
+                        <p>Figma</p>
+                    </div>
+                </div>
+
+            </div>
+            <h3>Contact</h3>
+            <div id="rs">
+                <div class="container">
+                    <div class="card">
+                        <div class="face face1">
+                            <div class="content">
+                                <div class="icon">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="face face2">
+                            <div class="content">
+                                <h3>
+                                    <a href="https://www.linkedin.com/in/safwa-djelabi-7bb859254/" target="_blank">Safwa
+                                        Djelabi</a>
+                                </h3>
+                                <p>C'est là que j'établis mon réseau et que je construis mon Portfolio professionnel.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="face face1">
+                            <div class="content">
+                                <div class="icon">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="face face2">
+                            <div class="content">
+                                <h3>
+                                    <a href="https://www.instagram.com/safwaisreading/?utm_source=qr"
+                                        target="_blank">@safwaisreading</a>
+                                </h3>
+                                <p>C'est là que je partage ma passion pour la lecture.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="face face1">
+                            <div class="content">
+                                <div class="icon">
+                                    <i class="fa-brands fa-tiktok"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="face face2">
+                            <div class="content">
+                                <h3>
+                                    <a href="https://www.tiktok.com/@safwaisreading" target="_blank">@safwaisreading</a>
+                                </h3>
+                                <p>C'est une autre manière pour moi de partager ma passion pour la lecture.
+                                <p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="rsm">
+            <ul>
+                <li>
+                    <a class="linkedin" href=" https://www.linkedin.com/in/safwa-djelabi-7bb859254/"
+                    target="_blank">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="instagram" href="https://www.instagram.com/safwaisreading/?utm_source=qr" target="_blank">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="tiktok" href="https://www.tiktok.com/@safwaisreading" target="_blank">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <section id="ct">
+            <div class="contact-wrapper">
+                <div>
+                    <form id="form" class="topBefore">
+                        <input id="name" type="text" placeholder="NOM">
+                        <input id="email" type="text" placeholder="E-MAIL">
+                        <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+                        <input id="submit" type="submit" value="GO!">
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <nav>
+                <ul id="menu-p">
+                    <a href="#qs" class="ancre">
+                        <li>Qui suis-je ?</li>
+                    </a>
+                    <span class="vertical-line"></span>
+                    <a href="#cmp" class="ancre">
+                        <li>Mes compétences</li>
+                    </a>
+                    <span class="vertical-line"></span>
+                    <a href="#rea" class="ancre">
+                        <li>Mes Réalisations</li>
+                    </a>
+                    <span class="vertical-line"></span>
+                    <a href="#ct" class="ancre">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+        <div class="copyright"><a href="assets/Mentions Légales.pdf" target="_blank">&copy; SAFWA DJELABI Tous Droits
+                Réservé.</div></a>
+    </footer>
+    <a href="#top" id="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
+    <script src="script.js"></script>
+</body>
+
+</html>
